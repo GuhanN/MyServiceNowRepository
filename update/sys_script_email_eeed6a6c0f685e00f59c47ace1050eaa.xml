@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>forexnow.remind.rate</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(current, template, email, email_action, event) {
+	
+	var parm = event.parm2.toString().split('^');
+	var baseCurrency = parm[0];
+	var targetCurrency = parm[1];
+	var rate = parm[2];
+	template.print('Current ' + baseCurrency + ' to ' + targetCurrency + ' exchange rate is <b><i>' + rate + '</i></b>!');
+	
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>guhann</sys_created_by>
+        <sys_created_on>2015-12-22 12:14:32</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>eeed6a6c0f685e00f59c47ace1050eaa</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>forexnow.remind.rate</sys_name>
+        <sys_package display_value="ForexNow" source="x_5516_forexnow">9b676aa80f685e00f59c47ace1050e38</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ForexNow">9b676aa80f685e00f59c47ace1050e38</sys_scope>
+        <sys_update_name>sys_script_email_eeed6a6c0f685e00f59c47ace1050eaa</sys_update_name>
+        <sys_updated_by>guhann</sys_updated_by>
+        <sys_updated_on>2016-01-07 20:52:45</sys_updated_on>
+    </sys_script_email>
+</record_update>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="ecc_agent" version="2" view="discovery">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="ecc_agent" element="NULL" name="ecc_agent" parent="NULL" relationship="NULL" sys_domain="global" view="9c9229110f133100f59c47ace1050e1a">e477c0fe0ab30153008920655a802d9d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2008-11-28 18:58:52</sys_created_on>
+            <sys_id>e477c19c0ab3015300a8216f29582921</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2008-11-28 18:58:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>version</element>
+            <list_id display_value="ecc_agent" element="NULL" name="ecc_agent" parent="NULL" relationship="NULL" sys_domain="global" view="9c9229110f133100f59c47ace1050e1a">e477c0fe0ab30153008920655a802d9d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2008-11-28 18:58:53</sys_created_on>
+            <sys_id>e477c1ef0ab3015300c5ccdefb3c69a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2008-11-28 18:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>host_name</element>
+            <list_id display_value="ecc_agent" element="NULL" name="ecc_agent" parent="NULL" relationship="NULL" sys_domain="global" view="9c9229110f133100f59c47ace1050e1a">e477c0fe0ab30153008920655a802d9d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2008-11-28 18:58:53</sys_created_on>
+            <sys_id>e477c1f40ab30153004774dca876e1b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2008-11-28 18:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>status</element>
+            <list_id display_value="ecc_agent" element="NULL" name="ecc_agent" parent="NULL" relationship="NULL" sys_domain="global" view="9c9229110f133100f59c47ace1050e1a">e477c0fe0ab30153008920655a802d9d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2008-11-28 18:58:53</sys_created_on>
+            <sys_id>e477c1f70ab3015300b193c0c03d28aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2008-11-28 18:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>validated</element>
+            <list_id display_value="ecc_agent" element="NULL" name="ecc_agent" parent="NULL" relationship="NULL" sys_domain="global" view="9c9229110f133100f59c47ace1050e1a">e477c0fe0ab30153008920655a802d9d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2015-07-27 18:58:53</sys_created_on>
+            <sys_id>34309704ff2102001f17ffffffffff4b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2015-07-27 18:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>last_refreshed</element>
+            <list_id display_value="ecc_agent" element="NULL" name="ecc_agent" parent="NULL" relationship="NULL" sys_domain="global" view="9c9229110f133100f59c47ace1050e1a">e477c0fe0ab30153008920655a802d9d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2008-11-28 18:58:53</sys_created_on>
+            <sys_id>e477c1f90ab3015300501b92414eb4be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2008-11-28 18:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>started</element>
+            <list_id display_value="ecc_agent" element="NULL" name="ecc_agent" parent="NULL" relationship="NULL" sys_domain="global" view="9c9229110f133100f59c47ace1050e1a">e477c0fe0ab30153008920655a802d9d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2008-11-28 18:58:53</sys_created_on>
+            <sys_id>e477c1fd0ab301530098e7a8850af1bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2008-11-28 18:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>stopped</element>
+            <list_id display_value="ecc_agent" element="NULL" name="ecc_agent" parent="NULL" relationship="NULL" sys_domain="global" view="9c9229110f133100f59c47ace1050e1a">e477c0fe0ab30153008920655a802d9d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2008-11-28 18:58:53</sys_created_on>
+            <sys_id>e477c2000ab30153002b7558b11939a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2008-11-28 18:58:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>ecc_agent</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>surya.nair</sys_created_by>
+            <sys_created_on>2016-02-29 06:26:18</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1145b8b60ff55200f59c47ace1050e9c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ecc_agent</sys_name>
+            <sys_package display_value="ForexNow" source="x_5516_forexnow">9b676aa80f685e00f59c47ace1050e38</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="ForexNow">9b676aa80f685e00f59c47ace1050e38</sys_scope>
+            <sys_update_name>sys_ui_list_ecc_agent_discovery</sys_update_name>
+            <sys_updated_by>surya.nair</sys_updated_by>
+            <sys_updated_on>2016-02-29 06:26:18</sys_updated_on>
+            <sys_user display_value="Surya Nair">e0c80be40fa85e00f59c47ace1050e9c</sys_user>
+            <view display_value="Discovery" name="discovery">9c9229110f133100f59c47ace1050e1a</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

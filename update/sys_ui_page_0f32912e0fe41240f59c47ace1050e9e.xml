@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function savePreference() {
+	var baseCurr = $('base_curr').value;
+	var targetCurr = $('target_curr').value;
+	var expectedRate = $('expected_rate').value;
+	var refreshInterval = $('refresh_interval').value;
+	var emailRecipients = $('email_recipients').value;
+	
+	var gA = new GlideAjax('global.ForexNowUtils');
+	gA.addParam('sysparm_name','setPreference');
+	gA.addParam('sysparm_base_currency',baseCurr);
+	gA.addParam('sysparm_target_currency',targetCurr);
+	gA.addParam('sysparm_expected_rate',expectedRate);
+	gA.addParam('sysparm_refresh_interval',refreshInterval);
+	gA.addParam('sysparm_email_recipients',emailRecipients);
+	gA.getXMLAnswer(getResponse);
+	
+	function getResponse(answer) {
+		if(answer)
+			alert('Your settings are saved!');
+	}
+}
+
+function loadPreference() {
+	var gA = new GlideAjax('global.ForexNowUtils');
+	gA.addParam('sysparm_name','getPreference');
+	gA.getXMLAnswer(getResponse);
+	
+	function getResponse(answer) {
+		var preference = JSON.parse(answer);
+		$('base_curr').value = preference.base_curr;
+		$('target_curr').value = preference.target_curr;
+		$('expected_rate').value = preference.expected_rate;
+		$('refresh_interval').value = preference.refresh_interval;
+		$('email_recipients').value = preference.email_recipients;
+	}
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_5516_forexnow_forexnow_preferences.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<html>
+<body onload="loadPreference();">
+<table>
+<tr><td><hr></hr>Please edit your changes and press Save<hr></hr></td></tr>
+<tr><td>
+<p><font size="4"><strong><font color="#0000FF">Forex Settings</font></strong></font></p>
+</td></tr>
+<tr><td class="tdwrap label_left">Please set the base currency</td></tr>
+<tr><td>
+	<select id="base_curr" style="width: 300px" autocomplete="off" name="base_curr">
+	<option value="INR">INR</option>
+	<option value="CHF">CHF</option>
+	<option value="EUR">EUR</option>
+	<option value="USD">USD</option>
+	<option value="GBP">GBP</option>
+	</select><br></br>
+</td></tr>
+<tr><td class="tdwrap label_left">Please set the target currency for rate conversion</td></tr>
+<tr><td>
+	<select style="width: 300px" autocomplete="off" id="target_curr" name="target_curr">
+		<option value="INR">INR</option>
+		<option value="CHF">CHF</option>
+		<option value="EUR">EUR</option>
+		<option value="USD">USD</option>
+		<option value="GBP">GBP</option>
+	</select><br></br>
+</td></tr>
+<tr><td class="tdwrap label_left">Please set the expected target currency rate for reminder</td></tr>
+<tr><td><input id="expected_rate" value="" autocomplete="off" style="width: 700px" name="expected_rate"/><br></br></td></tr>
+<tr><td class="tdwrap label_left">Please set the refresh interval (in minutes) for exchange rate check</td></tr>
+<tr><td><input autocomplete="off" style="width: 700px" id="refresh_interval" value="" name="refresh_interval"/><br></br></td></tr>
+<tr><td class="tdwrap label_left">Please add the email address (if multiple separate by comma) of the recipients for reminder  notification</td></tr>
+<tr><td><input autocomplete="off" style="width: 700px" id="email_recipients" value=""/><br></br></td></tr>
+<tr><td colspan="2"><button id="save" class="listactions" name="save" onclick="savePreference();">Save</button></td></tr>
+</table>
+</body>
+</html>
+</j:jelly>]]></html>
+        <name>forexnow_preferences</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>guhann</sys_created_by>
+        <sys_created_on>2015-12-28 10:59:21</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0f32912e0fe41240f59c47ace1050e9e</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>forexnow_preferences</sys_name>
+        <sys_package display_value="ForexNow" source="x_5516_forexnow">9b676aa80f685e00f59c47ace1050e38</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ForexNow">9b676aa80f685e00f59c47ace1050e38</sys_scope>
+        <sys_update_name>sys_ui_page_0f32912e0fe41240f59c47ace1050e9e</sys_update_name>
+        <sys_updated_by>guhann</sys_updated_by>
+        <sys_updated_on>2015-12-28 18:27:19</sys_updated_on>
+    </sys_ui_page>
+</record_update>

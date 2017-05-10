@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>forexnow.check.rate</name>
+        <run_as display_value="Guhan Narayanan">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 02:00:00</run_period>
+        <run_start>2015-12-22 08:00:00</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[try {
+	var obj = new global.ForexNowUtils();
+	var preference = new global.JSON().decode(obj.getPreference());
+	var currentRate = parseFloat(obj.getForexRate(preference.base_curr, preference.target_curr));
+	var expectedRate = preference.expected_rate;
+	var recipients = preference.email_recipients;
+	
+	if(currentRate >= expectedRate) {
+		gs.eventQueue('x_5516_forexnow.remind.rate',current,recipients,preference.base_curr+'^'+preference.target_curr+'^'+currentRate);
+	}
+}
+catch(e) {
+	gs.debug('Exception in Scheduled Script: forexnow.check.rate, @ line #'+e.lineNumber+', message: '+e.message);
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>guhann</sys_created_by>
+        <sys_created_on>2015-12-22 12:35:34</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>65b172ac0f685e00f59c47ace1050ed0</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>forexnow.check.rate</sys_name>
+        <sys_package display_value="ForexNow" source="x_5516_forexnow">9b676aa80f685e00f59c47ace1050e38</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ForexNow">9b676aa80f685e00f59c47ace1050e38</sys_scope>
+        <sys_update_name>sysauto_script_65b172ac0f685e00f59c47ace1050ed0</sys_update_name>
+        <sys_updated_by>guhann</sys_updated_by>
+        <sys_updated_on>2016-08-22 09:20:47</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
